@@ -186,3 +186,26 @@ button {
   top: -32px;
   right: -250px;
 }
+
+#celsius {
+  color: rgb(142, 112, 167);
+  cursor: default;
+  text-decoration: none;
+}
+
+#celsius:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(134, 90, 170);
+}
+#fahrenheit {
+  color: rgb(60, 0, 128);
+  cursor: default;
+  text-decoration: none;
+}
+
+#fahrenheit:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(45, 1, 95);
+}
