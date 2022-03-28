@@ -72,8 +72,8 @@ userCurrentButton.addEventListener("click", clickCurrentPosition);
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#current");
-  let fahrenheitTemperature = (15 * 9) / 5 + 32;
-  temperatureElement.innerHTML = fahrenheitTemperature;
+  let fahrenheitTemperature = (temperatureElement.innerHTML * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
 let fahrenheitLink = document.querySelector("#fahrenheit");
