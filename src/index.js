@@ -27,6 +27,10 @@ function showWeather(response) {
   let temperature = Math.round(response.data.main.temp);
   let showTemperature = document.querySelector("#current");
   showTemperature.innerHTML = `${temperature}`;
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = response.data.main.humidity;
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = Math.round(response.data.wind.speed);
 }
 
 function search(event) {
