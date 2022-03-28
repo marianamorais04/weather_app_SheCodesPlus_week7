@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WeatherWeek4Homework</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="icons">
+        <img
+          src="images/refresh.png"
+          alt="refresh icon"
+          width="25"
+          height="25"
+        />
+        <img src="images/share.png" alt="share icon" width="25" height="25" />
+      </div>
+
+      <form class="mb-3" id="searchCity">
+        <input
+          type="text"
+          class="form-control"
+          id="exampleCity"
+          aria-describedby="cityHelp"
+          placeholder="Enter New City"
+          autocomplete="off"
+        />
+        <button>
+          <img
+            src="images/search.png"
+            alt="sun icon"
+            id="exampleCity"
+            width="25"
+            height="25"
+            value="search-text-button"
+          />
+        </button>
+        <button type="button" id="currentCityButton">Current City</button>
+      </form>
+      <div class="infocity">
+        <span class="city" id="city">Amarante, Porto, Portugal </span>
+        <img src="images/addfav.png" alt="fav icon" width="25" height="25" />
+      </div>
+
+      <div class="infoday">
+        <span class="day" id="currentDate">Sunday, 13h33</span>
+        <span class="update">updated 7 mins ago</span>
+      </div>
+
+      <div class="temperature">
+        <img src="images/sun.png" alt="sun icon" width="70" height="70" />
+        <span id="current">15</span>
+        <a id="celsius" href="#">°C</a> |
+        <a id="fahrenheid" href="#"> °F </a>
+        <ul>
+          <li id="precipitation">Precipitation: 96%</li>
+          <li id="wind">Wind: 10km/h</li>
+          <li id="humidity">Humidity: 73%</li>
+        </ul>
+      </div>
+
+      <div class="moreinfo">
+        <span class="line">Temperature |</span>
+        <span> Precipitation</span>
+        <span> | Wind</span>
+      </div>
+
+      <div class="nextdays">
+        <span class="monday"
+          ><img src="images/sun.png" alt="sun icon" width="50" height="50" />
+          MON
+          <br />
+          5º <strong>/ 19º</strong>
+        </span>
+        <span class="tuesday"
+          ><img src="images/sun.png" alt="sun icon" width="50" height="50" />
+          TUE
+          <br />
+          7º <strong>/ 20º</strong>
+        </span>
+        <span class="wednesday"
+          ><img src="images/sun.png" alt="sun icon" width="50" height="50" />
+          WED
+          <br />
+          6º <strong>/ 20º</strong>
+        </span>
+        <span class="thursday"
+          ><img
+            src="images/cloud-sun.png"
+            alt="sun cloud icon"
+            width="60"
+            height="50"
+          />
+          THU
+          <br />
+          9º <strong>/ 18º</strong>
+        </span>
+        <span class="friday"
+          ><img src="images/sun.png" alt="sun icon" width="50" height="50" />
+          FRI
+          <br />
+          5º <strong>/ 18º</strong>
+        </span>
+      </div>
+    </div>
+    <div class="link">
+      <a
+        href="https://github.com/marianamorais04/shecodes_plus_week6_weatherapp"
+      >
+        Open-source code
+      </a>
+      by Mariana Morais
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
